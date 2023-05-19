@@ -21,3 +21,7 @@ jobs:
         env:
           VARIABLE_NAME: un autre variable
         run: echo ${{ env.VARIABLE_NAME }}
+      - name: Use a Secret
+        env:
+          SUPER_SECRET: ${{ secrets.SECRET_NAME }}
+        run: echo $SUPER_SECRET
