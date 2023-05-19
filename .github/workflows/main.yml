@@ -18,4 +18,6 @@ jobs:
       - name: List files
         run: ls -al
       - name: Afficher une variable
+        env:
+          VARIABLE_NAME: un autre variable
         run: echo ${{ env.VARIABLE_NAME }}
