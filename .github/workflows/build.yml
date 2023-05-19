@@ -20,3 +20,5 @@ jobs:
           extensions: xml, pdo_sqlite, intl
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
+      - name: Run test
+        run: php bin/phpunit
